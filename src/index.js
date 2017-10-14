@@ -4,7 +4,6 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
-
 import Banner from './comps/img/banner.jpg';
 import MainC from './comps/00-MainComp.jsx';
 import Page1 from './comps/01-Page1.jsx';
@@ -44,7 +43,6 @@ const BasicExample = () => {
           </Nav>
         </div>
 
-
         <hr style={ brSty } />
 
         <Route exact path="/" component={MainC}/>
@@ -54,7 +52,10 @@ const BasicExample = () => {
         <Route path="/4" component={Page4}/>
 
         <br/>
+        <div>The question is: "Who got the last word..."</div>
+        <h4>By: <a href="https://www.mycode.website/">Edmundo Rubio.</a></h4>
         <hr style={ brSty } />
+
       </div>
     </Router>
   )
