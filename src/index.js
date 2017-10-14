@@ -26,19 +26,19 @@ const BasicExample = () => {
         <div>
           <Nav style={bar1}>
             <NavItem>
-              <NavLink style={btn1} href="/">Home</NavLink>
+              <Link style={btn1} to="/">Home</Link>
             </NavItem>
             <NavItem>
-              <NavLink style={btn1} href="/1">Rap 1</NavLink>
+              <Link style={btn1} to="/1">Page 1</Link>
             </NavItem>
             <NavItem>
-              <NavLink style={btn1} href="/2">Rap 2</NavLink>
+              <Link style={btn1} to="/2">Page 2</Link>
             </NavItem>
             <NavItem>
-              <NavLink style={btn1} href="/3">Rap 3</NavLink>
+              <Link style={btn1} to="/3">Page 3</Link>
             </NavItem>
             <NavItem>
-              <NavLink style={btn1} href="/4">Rap 4</NavLink>
+              <Link style={btn1} to="/4">Page 4</Link>
             </NavItem>
           </Nav>
         </div>
