@@ -30,16 +30,16 @@ const BasicExample = () => {
               <Link style={btn1} to="/">Home</Link>
             </NavItem>
             <NavItem>
-              <Link style={btn1} to="/1">Page 1</Link>
+              <Link style={btn1} to="/1">RAP-1</Link>
             </NavItem>
             <NavItem>
-              <Link style={btn1} to="/2">Page 2</Link>
+              <Link style={btn1} to="/2">RAP-2</Link>
             </NavItem>
             <NavItem>
-              <Link style={btn1} to="/3">Page 3</Link>
+              <Link style={btn1} to="/3">RAP-3</Link>
             </NavItem>
             <NavItem>
-              <Link style={btn1} to="/4">Page 4</Link>
+              <Link style={btn1} to="/4">RAP-4</Link>
             </NavItem>
           </Nav>
         </div>
