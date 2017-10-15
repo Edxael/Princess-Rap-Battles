@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Banner from './comps/img/banner.jpg';
@@ -10,6 +10,7 @@ import Page1 from './comps/01-Page1.jsx';
 import Page2 from './comps/02-Page.jsx';
 import Page3 from './comps/03-Page.jsx';
 import Page4 from './comps/04-Page.jsx';
+import Page5 from './comps/05-Page.jsx';
 
 
 const BasicExample = () => {
@@ -45,11 +46,15 @@ const BasicExample = () => {
 
         <hr style={ brSty } />
 
-        <Route exact path="/" component={MainC}/>
-        <Route path="/1" component={Page1}/>
-        <Route path="/2" component={Page2}/>
-        <Route path="/3" component={Page3}/>
-        <Route path="/4" component={Page4}/>
+        <Switch>
+          <Route exact path="/" component={MainC}/>
+          <Route path="/1" component={Page1}/>
+          <Route path="/2" component={Page2}/>
+          <Route path="/3" component={Page3}/>
+          <Route path="/4" component={Page4}/>
+          <Route component={Page5}/>
+        </Switch>
+
 
         <br/>
         <div>The question is: "Who got the last word..."</div>
